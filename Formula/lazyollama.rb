@@ -3,8 +3,8 @@
 class Lazyollama < Formula
     desc "A lazy way to manage Ollama models" # Short description
     homepage "https://github.com/webmatze/lazyollama" # Project homepage
-    url "https://github.com/webmatze/lazyollama/archive/refs/tags/v0.1.0.tar.gz" # URL to the source tarball of a specific release
-    sha256 "d709a6d06fe0ff6a7f21f53dd37e3b727bdfc319aec963962cc0a68c5c8f927c" # SHA256 hash of the tarball
+    url "https://github.com/webmatze/lazyollama/archive/refs/tags/v0.1.1.tar.gz" # URL to the source tarball of a specific release
+    sha256 "30342faf503fa89d939df15e97b885500d0590306d80bcc57151e1ed0f290a78" # SHA256 hash of the tarball
     license "MIT" # Or your chosen license
   
     # Dependencies
@@ -28,8 +28,8 @@ class Lazyollama < Formula
     test do
       # Basic test to ensure the binary runs and outputs something expected
       # For example, check if it outputs the version number
-      # Replace "0.1.0" with the actual version string your app outputs
-      assert_match "lazyollama 0.1.0", shell_output("#{bin}/lazyollama --version")
+      # Replace "0.1.1" with the actual version string your app outputs
+      assert_match "lazyollama 0.1.1", shell_output("#{bin}/lazyollama --version")
       # Or a more functional test if applicable
       # system "#{bin}/lazyollama", "--help"
     end
